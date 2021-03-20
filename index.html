@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="loader">
+            <span id="spinny-thing"></span>
+            <object data="assets/logo.svg" type="image/svg+xml"></object>
+        </div>
+        <span id="progress-bar"></span>
+    </div>
+
+    <div id="page-wrapper">
+        <header>
+            <ul data-position="left">
+                <object data="assets/logo.svg" type="image/svg+xml"></object>
+            </ul>
+            <ul data-position="right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/download.html">Download</a></li>
+            </ul>
+        </header>
+        <section id="fullviewport" aria-label="Main page">
+            <div class="left">
+                <h4>The client</h4>
+                <h1>of the future</h1>
+                <h5>Leave clients like<br>Lunar and Badlion</h5>
+            </div>
+            <div class="right">
+                <h1>Luminous Client</h1>
+                <div class="button-container">
+                    <a href="">About</a>
+                    <a href="">Download</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.body.classList.add("page-loaded")
+            }, 1500)
+        })
+    </script>
+</body>
+</html>
